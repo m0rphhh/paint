@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.text.Font?>
+<fx:root fx:id="root_pane" prefHeight="50.0" prefWidth="150.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefWidth="150" prefHeight="50" style="-fx-background-color: #dddddd;">
+            <children>
+                <AnchorPane fx:id="left_link_handle" prefWidth="25.0" styleClass="left-link-handle" style="-fx-background-color: #FF0000;" opacity="0.6"/>
+                <VBox alignment="CENTER" style="-fx-border-color: #777777; -fx-border-width: 1; -fx-border-style: solid;">
+                    <children>
+                        <Label fx:id="title_bar" text="Label" prefWidth="100" alignment="CENTER">
+                            <font>
+                                <Font size="16" name="System Bold"/>
+                            </font>
+                        </Label>
+                        <Button fx:id="DeleteTemplate" maxWidth="Infinity" text="Delete" prefHeight="25" style="-fx-background-color: #FF7272;"/>
+                    </children>
+                </VBox>
+                <AnchorPane fx:id="right_link_handle" prefWidth="25.0" styleClass="right-link-handle" style="-fx-background-color: #00FA9A;" opacity="0.6"/>
+            </children>
+        </HBox>
+    </children>
+</fx:root>
